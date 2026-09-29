@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Maquinaria Agrícola - AgroTech</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .back-btn {
+      background: #059669;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 20px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+      transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .catalog-item {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .catalog-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+    }
+    .catalog-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .catalog-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .catalog-body h2 {
+      text-align: left;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #065f46;
+    }
+    .catalog-body p {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+    .price-tag {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+    <div class="catalog-header">
+      <div>
+        <h1>🚜 Catálogo de Maquinaria Agrícola</h1>
+        <p style="color: #6b7280;">Equipos de alto rendimiento para preparación de suelos, siembra y cosecha.</p>
+      </div>
+      <a href="index.html" class="back-btn">&larr; Volver a AgroTech</a>
+    </div>
+
+    <div class="catalog-grid">
+      <!-- 1. Tractor agrícola -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQsBjJ0-GZQ6tePg2mKxwjXy2Z7Pfkcfb04G4SpLx3TIdiUtCxtSsk1Hcz2PWyQ7Tt8R-G2F3TdDFgXFJk" alt="Tractor agrícola en primer plano">
+        <div class="catalog-body">
+          <div>
+            <h2>🚜 Tractor agrícola</h2>
+            <p><strong>Función:</strong> Prepara el terreno, transporta carga pesada y conecta implementos agrícolas de corte y arrastre.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $180.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Cosechadora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSS7khnT7di5Q21cDYWO7L649XDkWQlHa7NGP0mwu0hYUYkUvCK23TYIYt4Iwv5wf_ek1qp9EpWMCBK3Gc" alt="Cosechadora recolectando en campo">
+        <div class="catalog-body">
+          <div>
+            <h2>🌾 Cosechadora</h2>
+            <p><strong>Función:</strong> Recolecta granos y cereales como maíz, arroz, trigo y soya de forma masiva y limpia.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $600.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Sembradora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTQadzbEMQQ2RLbZtDfeaZIovPUs6NCly-GbVW2PjDitpMB2YydXqM_IQ5PYADc0wgdSTzNhFBMIm0a9UE" alt="Máquina sembradora agrícola">
+        <div class="catalog-body">
+          <div>
+            <h2>🌱 Sembradora</h2>
+            <p><strong>Función:</strong> Dosifica y coloca semillas a profundidad y espaciado exacto en cada surco.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $45.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Arado -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcQt_tEZj5jCq5qLb2UA0GQ3TN1tSFx9iZ1Pc38WwgrDuUUiNPUdjBYpUHGV1wF70844kfcaZlXX8mO--Mw" alt="Arado preparando la tierra">
+        <div class="catalog-body">
+          <div>
+            <h2>🔨 Arado</h2>
+            <p><strong>Función:</strong> Remueve y oxigena las capas profundas del suelo previo al proceso de siembra.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $18.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Cultivador -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcS-6ed6IoNmqYiovNE7mTZOUpMjtkhneH-dfPoO9t8OzyvEcEeWLXvIivFOFWwshpgLaMgcYtOH8KwUaAM" alt="Cultivador agrícola removiendo el suelo">
+        <div class="catalog-body">
+          <div>
+            <h2>🌱 Cultivador</h2>
+            <p><strong>Función:</strong> Controla malezas superficiales y descompacta la tierra entre hileras de plantas.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $15.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Fumigadora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSfxhTI5Af3xxdB9o0cOCP3UIuQArZq9lAhhHpnmP4b4zmMvzNQkoU5ciZT3_P4777Yobkd6QXj4GcU8AY" alt="Fumigadora agrícola aplicando líquido">
+        <div class="catalog-body">
+          <div>
+            <h2>💨 Fumigadora</h2>
+            <p><strong>Función:</strong> Pulveriza defensivos agrícolas y fertilizantes foliares de manera controlada y extensa.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $35.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Segadora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcR9Efg08JdfJ_HXJid8XsZthtL0hyK44hE4rwWipU08cCA4w11Pl0lCAeEHWP5u01lVrGKrSaEifMHJolk" alt="Segadora acondicionadora de forraje">
+        <div class="catalog-body">
+          <div>
+            <h2>🌿 Segadora</h2>
+            <p><strong>Función:</strong> Corta pasturas, heno y forrajes para alimentación ganadera con cortes limpios.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $25.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Empacadora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSR5pCAhpW6Iy1--XNrKUfmNaPMgKTFtaVAt8FFdZNqYs50CzFHoJm4m-Oz3IJP3utHmnDpfgSNWzO-cfk" alt="Empacadora expulsando rollo de heno">
+        <div class="catalog-body">
+          <div>
+            <h2>📦 Empacadora</h2>
+            <p><strong>Función:</strong> Prensado automático de heno y forraje en pacas compactas para fácil acopio y transporte.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $80.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Trilladora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRr_tfvTYTMvuatwxJpFz1C1ZtKuliLmZqEEtFuhO5u3Q4UoArUZP2zqS5yq_Z5Izjxwp6bHMgP4TKKJUY" alt="Máquina trilladora separando grano de trigo">
+        <div class="catalog-body">
+          <div>
+            <h2>🌽 Trilladora</h2>
+            <p><strong>Función:</strong> Separa de forma mecánica la espiga y paja del grano limpio con mínima merma.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $70.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. Rastra de discos -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRIvl3OxuAf20ODlnZJmgERG5PMw-ERmI5K568JmYlJoWJ8lNqTHTD-zq2Bm9EGyKMEJrNgob5JAWMEwaQ" alt="Rastra de discos nivelando el terreno">
+        <div class="catalog-body">
+          <div>
+            <h2>⚙️ Rastra de discos</h2>
+            <p><strong>Función:</strong> Pulveriza terrones gruesos de tierra y nivela la cama de siembra para favorecer la germinación.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $25.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 11. Desbrozadora -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTmfbFpYjsjT37M9Qpmsu7wgTJqcpMiXC6hKJrx1LIJimzhAcRf8ddVOEv2QLGhsz1-VBd567Hdb46FDcI" alt="Desbrozadora agrícola rotativa">
+        <div class="catalog-body">
+          <div>
+            <h2>🪓 Desbrozadora</h2>
+            <p><strong>Función:</strong> Trituración de maleza densa, rastrojos y limpieza de bordes perimetrales del predio.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $8.000.000</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>

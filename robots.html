@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Robots Agrícolas - AgroTech</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .catalog-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .back-btn {
+      background: #059669;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 20px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+      transition: all 0.3s ease;
+    }
+    .back-btn:hover {
+      background: #047857;
+      transform: translateY(-2px);
+    }
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .catalog-item {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .catalog-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.14);
+    }
+    .catalog-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .catalog-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .catalog-body h2 {
+      text-align: left;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #065f46;
+    }
+    .catalog-body p {
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+    .price-tag {
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+      border-radius: 10px;
+      padding: 8px 12px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+    <div class="catalog-header">
+      <div>
+        <h1>🤖 Catálogo de Robots Agrícolas</h1>
+        <p style="color: #6b7280;">Sistemas autónomos guiados por inteligencia artificial para labores continuas en campo e invernaderos.</p>
+      </div>
+      <a href="index.html" class="back-btn">&larr; Volver a AgroTech</a>
+    </div>
+
+    <div class="catalog-grid">
+      <!-- 1. Robot de cosecha -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSQ1b6LdWycUfIodk_1kh7xJSYW5H6KB8OdIc12ytmRUmF8Y8OOy0FNTirojAw15HdRUgpBWNNLjAzEJ-M" alt="Robot autónomo de cosecha en campo de cultivo">
+        <div class="catalog-body">
+          <div>
+            <h2>🤖 Robot de cosecha</h2>
+            <p><strong>Función:</strong> Reconoce el punto óptimo de maduración y recolecta hortalizas y frutos sin dañarlos.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $150.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Robot deshierbador -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQMJ9MOuNi5X59OhNPZPEdY_r2o1YTJsB3QW_i8bB1UDSvMC8hd9fJXUtpRlO0H7h87pDaNvu5bxZQDtGM" alt="Robot autónomo deshierbador eliminando malezas">
+        <div class="catalog-body">
+          <div>
+            <h2>🌱 Robot deshierbador</h2>
+            <p><strong>Función:</strong> Identifica malezas mediante visión computacional y las elimina mecánicamente o con micro-láser.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $100.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Robot de siembra -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRTK06PNFGclJB2Z46047lBlTc648RLh4DZSd8s2n_KzPEdpMH6b5XicMqAyRbCatL0ShbisrS7dXOccw4" alt="Robot agrícola de siembra de precisión en surcos">
+        <div class="catalog-body">
+          <div>
+            <h2>🌾 Robot de siembra</h2>
+            <p><strong>Función:</strong> Siembra automatizada 24/7 con posicionamiento RTK centimétrico y registro de trazabilidad por semilla.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $120.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Robot de fumigación -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS8us95laBJPA0foKZKBTx7N-jS9GmXsPEMndVDOREPpG2lnYz0lT5gwueHmz4dW7bG3RH4O87wiFPfTG8" alt="Robot terrestre autónomo pulverizador de cultivos">
+        <div class="catalog-body">
+          <div>
+            <h2>💨 Robot de fumigación</h2>
+            <p><strong>Función:</strong> Desplazamiento terrestre con navegación por LiDAR, pulverizando exactamente debajo del follaje donde habitan las plagas.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $130.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Robot de monitoreo -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcS4_4iGbO7JlDvZUBxpcx7cu9aUdrfh-ZY2jFk81lFzjRFP1w00CkwUOgJgR_DTgVMnRVlrpO0YqBEGMyY" alt="Robot con sensores de monitoreo inspeccionando hileras de plantas">
+        <div class="catalog-body">
+          <div>
+            <h2>📡 Robot de monitoreo</h2>
+            <p><strong>Función:</strong> Recorre pasillos de invernaderos o surcos registrando humedad ambiental, temperatura y diámetro de frutos.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $90.000.000</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Robot de recolección de frutas -->
+      <section class="catalog-item">
+        <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTIFkzZS7bRQJG5fBe_FRtO3MuK7e_Iq9bZZjEcqoJxcbzb1bGc4KLBpqc46zz-vjxetx7S0oPSuR7UN54" alt="Brazo robótico cosechando fruta madura en árbol frutal">
+        <div class="catalog-body">
+          <div>
+            <h2>🍎 Robot de recolección de frutas</h2>
+            <p><strong>Función:</strong> Brazo articulado con pinzas suaves de silicona neumática que desprenden la fruta de las ramas sin magullarla.</p>
+          </div>
+          <div>
+            <div class="price-tag">Precio: $180.000.000</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+</html>
